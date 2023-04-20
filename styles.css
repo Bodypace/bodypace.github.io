@@ -1,0 +1,76 @@
+
+@font-face {
+  font-family: "Sanchez";
+  src: url("./fonts/Sanchez/Sanchez-Regular.ttf");
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo > span {
+  text-align: center;
+  vertical-align: center;
+  font-family: 'Sanchez', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-self: stretch;
+  /* padding: 20px; */
+  /* box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1); */
+  /* box-shadow: 8px 8px 24px 0px rgba(221, 221, 230, 1); */
+  /* box-shadow: 8px 8px 24px 0px rgba(244, 240, 240, 1); */
+  border-bottom: 1px solid lightgrey;
+}
+
+nav > a {
+  padding: 20px; 
+  text-decoration: none;
+  color: grey;
+}
+
+nav > a:hover {
+  background-color: #f0f0f0;
+  box-shadow: 8px 8px 24px 0px rgba(244, 240, 240, 1);
+}
+
+nav > #spacer {
+  display: flex;
+  /* background-color: red; */
+  flex: 1;
+}
+
+#document {
+  margin: 100px;
+  padding: 20px;
+  max-width: 62%;
+  /* border-radius: 20px; */
+  /* box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1); */
+}
+
+#logo {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#logo > img {
+  width: 72px;
+  height: 72px;
+}
+
+md-block > p {
+  color: grey;
+}
