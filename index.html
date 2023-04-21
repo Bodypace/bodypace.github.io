@@ -10,10 +10,18 @@
   <link href="styles.css" rel="stylesheet" />
   <title>Bodypace</title>
   <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script>
+    function switchMenu() {
+      links = document.getElementById('menu-mobile').children;
+      for (let i = 1; i < links.length; ++i) {
+        links[i].style.display = links[i].style.display === 'flex' ? 'none' : 'flex';
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <nav>
+  <nav id="menu-wide">
     <a href="/" id="selected">Home</a>
     <a href="https://play.google.com/store/apps/" target="_blank">Download app</a>
     <a href="/future">Future</a>
@@ -21,8 +29,18 @@
     <a href="/regulations">Terms and Conditions</a>
     <a href="/policy">Privacy Policy</a>
   </nav>
+  <nav id="menu-mobile">
+    <button id="menu-mobile-title" onclick="switchMenu()">
+      <img src="menu.svg" alt="menu icon" />
+      <span>Home</span>
+    </button>
+    <a href="https://play.google.com/store/apps/" target="_blank">Download app</a>
+    <a href="/future">Future</a>
+    <a href="/regulations">Terms and Conditions</a>
+    <a href="/policy">Privacy Policy</a>
+  </nav>
   <div id="logo">
-    <img src="./favicon.ico"/>
+    <img src="./favicon.ico" />
     <span>Bodypace</span>
   </div>
   <div id="document">
@@ -31,7 +49,7 @@
     <p>Currently we only offer an app with which you can track your water and food intake.</p>
     <p>In future, we will do much more (see <a href="https://bodypace.org/future">https://bodypace.org/future</a>).</p>
     <p>Bodypace app is 100% open source and everyone can participate in developing or copying it to suit their needs.
-    Source code is at <a href="https://github.com/Bodypace/Mobile">https://github.com/Bodypace/Mobile</a>.</p>
+      Source code is at <a href="https://github.com/Bodypace/Mobile">https://github.com/Bodypace/Mobile</a>.</p>
   </div>
 </body>
 
