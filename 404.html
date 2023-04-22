@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is the error 404 page">
+  <link href="favicon.ico" rel="icon" />
+  <link href="styles.css" rel="stylesheet" />
+  <title>Bodypace</title>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script>
+    function switchMenu() {
+      links = document.getElementById('menu-mobile').children;
+      for (let i = 1; i < links.length; ++i) {
+        links[i].style.display = links[i].style.display === 'flex' ? 'none' : 'flex';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <nav id="menu-wide">
+    <a href="/">Home</a>
+    <a href="https://play.google.com/store/apps/" target="_blank">Download app</a>
+    <a href="/future">Future</a>
+    <div id="spacer"></div>
+    <a href="/regulations">Terms and Conditions</a>
+    <a href="/policy">Privacy Policy</a>
+  </nav>
+  <nav id="menu-mobile">
+    <button id="menu-mobile-title" onclick="switchMenu()">
+      <img src="menu.svg" alt="menu icon" />
+      <span>Menu</span>
+    </button>
+    <a href="/">Home</a>
+    <a href="https://play.google.com/store/apps/" target="_blank">Download app</a>
+    <a href="/future">Future</a>
+    <a href="/regulations">Terms and Conditions</a>
+    <a href="/policy">Privacy Policy</a>
+  </nav>
+  <div id="logo">
+    <img src="./favicon.ico" />
+    <span>Bodypace</span>
+  </div>
+  <div id="document">
+    <h1>Error 404.</h1>
+    <h2>There is no such page on our website.</h2>
+    <p>Here is a list of all valid pages:</p>
+    <ul>
+      <li><a href="/">bodypace.org</a></li>
+      <li><a href="/future">bodypace.org/future</a></li>
+      <li><a href="/regulations">bodypace.org/regulations</a></li>
+      <li><a href="/policy">bodypace.org/policy</a></li>
+    </ul>
+    <p>You see this error because you probably have some typo in your URL.</p>
+    <p>If not, please report an issue in our <a href="https://github.com/Bodypace/bodypace.github.io"
+        target="_blank">source code repository</a> of this website.</p>
+  </div>
+</body>
+
+</html>
