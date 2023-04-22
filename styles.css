@@ -13,7 +13,6 @@ body {
   display: none;
   flex-direction: row;
   align-self: stretch;
-  overflow: scroll;
   border-bottom: 1px solid lightgrey;
 }
 
