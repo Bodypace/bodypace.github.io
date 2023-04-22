@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is the home page">
+  <link href="favicon.ico" rel="icon" />
+  <link href="styles.css" rel="stylesheet" />
+  <title>Bodypace</title>
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script>
+    function switchMenu() {
+      links = document.getElementById('menu-mobile').children;
+      for (let i = 1; i < links.length; ++i) {
+        links[i].style.display = links[i].style.display === 'flex' ? 'none' : 'flex';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <nav id="menu-wide">
+    <a href="/">Home</a>
+    <a href="/app" id="selected">Download app</a>
+    <a href="/future">Future</a>
+    <div id="spacer"></div>
+    <a href="/regulations">Terms and Conditions</a>
+    <a href="/policy">Privacy Policy</a>
+  </nav>
+  <nav id="menu-mobile">
+    <button id="menu-mobile-title" onclick="switchMenu()">
+      <img src="menu.svg" alt="menu icon" />
+      <span>Download app</span>
+    </button>
+    <a href="/">Home</a>
+    <a href="/future">Future</a>
+    <a href="/regulations">Terms and Conditions</a>
+    <a href="/policy">Privacy Policy</a>
+  </nav>
+  <div id="logo">
+    <img src="./favicon.ico" />
+    <span>Bodypace</span>
+  </div>
+  <div id="document">
+    <h2>We do not recommend installing current "early release" version.</h2>
+    <h3>This version release goal is to set up development workflow and start building the app incrementally from a stable base. This version is not designed to provide enough functionality to the users or to make it a viable alternative to already available healthcare, medical and fitness apps.</h3>
+    <p>Bodypace app is currently at production track and being reviewed on Google Play Store.</p>
+    <p>Internal release and review found some accessibility issues but overall app is usable and without any functionality errors or warnings (known so far).</p>
+    <p>When the app becomes available in Play Store a link will be added here or this page URL will be changed to redirect to that app Play Store page.</p>
+    <p>For now, if someone wants to download and install the app, <a href="https://github.com/Bodypace/Mobile/raw/main/production/releases/universal.apk">this link</a> can be used.</p>
+    <p>Use it only for preview purposes and uninstall this app before installing the official one from the Play Store.</p>
+    <p>Here are some screenshots of the app:</p>
+    <img class="app-screenshot" src="https://github.com/Bodypace/Mobile/raw/main/production/releases/bodypace-prod-3-assets/Screenshot-Pixel-XL-1-welcome.png"/>
+    <img class="app-screenshot" src="https://github.com/Bodypace/Mobile/raw/main/production/releases/bodypace-prod-3-assets/Screenshot-Pixel-XL-2-no-food.png"/>
+    <img class="app-screenshot" src="https://github.com/Bodypace/Mobile/raw/main/production/releases/bodypace-prod-3-assets/Screenshot-Pixel-XL-3-add-orange.png"/>
+    <img class="app-screenshot" src="https://github.com/Bodypace/Mobile/raw/main/production/releases/bodypace-prod-3-assets/Screenshot-Pixel-XL-4-orange-added.png"/>
+    <img class="app-screenshot" src="https://github.com/Bodypace/Mobile/raw/main/production/releases/bodypace-prod-3-assets/Screenshot-Pixel-XL-5-settings.png"/>
+  </div>
+</body>
+
+</html>

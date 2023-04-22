@@ -163,3 +163,14 @@ md-block>h1 {
 md-block>h2 {
   color: black;
 }
+
+#document>h2 {
+  color: black;
+}
+
+.app-screenshot {
+  width: 270px;
+  height: 480px;
+  margin: 50px;
+  border: 1px solid grey;
+}
