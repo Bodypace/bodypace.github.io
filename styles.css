@@ -79,7 +79,7 @@ a#selected {
 }
 
 #menu-mobile-title>span {
-  align-self: center; 
+  align-self: center;
   justify-self: center;
   text-align: center;
   vertical-align: center;
@@ -172,4 +172,33 @@ md-block>h2 {
   height: 480px;
   margin: 50px;
   border: 1px solid grey;
+}
+
+#download {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#download>a {
+  all: unset;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 4px 4px 18px 0px rgba(124, 125, 143, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+#download>a:hover {
+  background-color: #f0f0f0;
+}
+
+#download-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
