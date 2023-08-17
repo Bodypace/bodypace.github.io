@@ -17,5 +17,6 @@
         display: flex;
         border-bottom: 1px solid silver;
         background-color: white;
+        overflow: scroll;
     }
 </style>

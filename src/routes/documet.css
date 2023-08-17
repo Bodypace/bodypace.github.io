@@ -49,3 +49,36 @@ li i {
 .note.warning {
     border-color: orange;
 }
+
+@media screen and (max-width: 1300px) {
+
+    p,
+    li {
+        /* background-color: aliceblue; */
+        font-size: 18px;
+    }
+
+    .note {
+        font-size: 16px;
+    }
+
+    li {
+        margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 5px 0;
+        /* background-color: brown; */
+    }
+
+    ul {
+        /* background-color: royalblue; */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

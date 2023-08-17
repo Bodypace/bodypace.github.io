@@ -5,9 +5,7 @@
 
 <style>
     .logo {
-        margin: 0 20px;
-        margin-top: 50px;
-        /* margin-bottom: 25px; */
+        margin: 50px 20px 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -30,5 +28,21 @@
         /* font-weight: 300; */
         font-weight: lighter;
         /* font-size: 12px; */
+    }
+
+    @media screen and (max-width: 1300px) {
+        .logo {
+            margin-top: 20px;
+            gap: 5px;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+        span {
+            font-size: 28px;
+        }
     }
 </style>

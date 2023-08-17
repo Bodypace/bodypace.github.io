@@ -19,9 +19,9 @@
     </p>
 
     <p>
-        Here are links useful for contributors:
+        Here are useful links for contributors:
         <a href="https://www.figma.com/file/8MHd4BSbKtJgd2iLiF6zd1/Main-Design?node-id=0%3A1">User interface design</a>,
-        <a href="https://github.com/orgs/Bodypace/projects/1">Project Board</a>
+        <a href="https://github.com/orgs/Bodypace/projects/1">Project Board</a>,
         <a href="https://postman.com/bodypace ">Online account server API</a>.
     </p>
     <p class="note">More stuff will be added later, e.g. mobile app development builds (created with Expo EAS).</p>

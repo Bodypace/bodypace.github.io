@@ -12,36 +12,39 @@
 <style>
     footer {
         display: flex;
-        border-top: 1px dashed silver;
         margin-top: 100px;
-        padding: 0;
-        /* height: 20vw; */
-        /* background-color: #fefefe; */
-        /* background-color: sienna; */
+        border-top: 1px dashed silver;
     }
 
     footer ul {
-        margin: 0;
         display: flex;
         flex: 1;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        /* background-color: brown; */
+        margin: 0;
+        padding: 40px 0;
         list-style-type: none;
     }
 
-    footer ul li {
-        padding: 50px;
-    }
-
     a {
-        text-decoration: none;
-        color: initial;
+        display: block;
+        padding: 10px 20px;
+        color: inherit;
     }
 
     a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 1300px) {
+        footer ul {
+            flex-direction: column;
+        }
+
+        a:first-child {
+            margin-bottom: 15px;
+        }
     }
 </style>

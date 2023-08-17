@@ -5,9 +5,13 @@
     export let name;
 </script>
 
-<!-- class:contribute={name === "contribute"} -->
 <Header selected={name} />
-<main class:home={name === "home"} class:future={name === "future" || name === "development"} class:webapp={name === "webapp"}>
+<main
+    class:home={name === "home"}
+    class:download={name === "download"}
+    class:future={name === "future" || name === "development"}
+    class:webapp={name === "webapp"}
+>
     <slot />
 </main>
 <Footer />
@@ -17,7 +21,16 @@
         box-sizing: border-box;
     }
 
+    :global(html) {
+        display: flex;
+        min-height: 100%;
+    }
+
     :global(body) {
+        display: flex;
+        flex: 1;
+        max-width: 100%;
+        flex-direction: column;
         margin: 0;
         padding: 0;
         font-family: sans-serif;
@@ -25,6 +38,14 @@
 
     .home {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .download {
+        display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -52,5 +73,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .future {
+            /* background-color: royalblue; */
+            width: 75vw;
+            max-width: inherit;
+        }
     }
 </style>

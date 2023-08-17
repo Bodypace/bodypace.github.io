@@ -4,6 +4,7 @@
 
 <nav>
     <ul>
+        <!-- <i class="fas fa-bars" /> -->
         <li>
             <a href="/" class:selected={selected === "home"}>Home</a>
         </li>
