@@ -1,0 +1,51 @@
+h1 {
+    font-weight: lighter;
+    margin: 75px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+p,
+li {
+    /* font-weight: lighter; */
+    font-weight: normal;
+    font-size: 24px;
+    /* color: grey; */
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    margin: 20px 0;
+}
+
+li b {
+    /* font-weight: normal; */
+    font-weight: bold;
+}
+
+li i {
+    font-weight: bold;
+}
+
+.note {
+    font-size: 22px;
+    border-left: 8px solid skyblue;
+    padding-left: 25px;
+}
+
+.note.warning {
+    border-color: orange;
+}
