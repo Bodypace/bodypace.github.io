@@ -42,7 +42,12 @@
     $: values = data[target];
 </script>
 
-<a href={values.href} target={values.target} class="x y {values.class}" class:large>
+<a
+    href={values.href}
+    target={values.target}
+    class="x y {values.class}"
+    class:large
+>
     {#if !noicon && values.icon}
         <i class={values.icon} />
     {/if}

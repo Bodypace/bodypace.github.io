@@ -27,22 +27,36 @@
             <a href="/" class:selected={selected === "home"}>Home</a>
         </li>
         <li>
-            <a href="/downloads" class:selected={selected === "download"}>Download apps</a>
+            <a href="/downloads" class:selected={selected === "download"}
+                >Download apps</a
+            >
         </li>
         <li>
-            <a href="/future" class:selected={selected === "future"}>Future plans</a>
+            <a href="/future" class:selected={selected === "future"}
+                >Future plans</a
+            >
         </li>
         <li>
-            <a href="/development" class:selected={selected === "development"}>Development</a>
+            <a href="/development" class:selected={selected === "development"}
+                >Development</a
+            >
         </li>
         <li>
-            <a href="/todo_webapp" class="highlight" class:selected={selected === "webapp"}>Online account</a>
+            <a
+                href="/todo_webapp"
+                class="highlight"
+                class:selected={selected === "webapp"}>Online account</a
+            >
         </li>
         <li>
-            <a href="/regulations" class:selected={selected === "regulations"}>Terms and conditions</a>
+            <a href="/regulations" class:selected={selected === "regulations"}
+                >Terms and conditions</a
+            >
         </li>
         <li>
-            <a href="/policy" class:selected={selected === "policy"}>Privacy Policy</a>
+            <a href="/policy" class:selected={selected === "policy"}
+                >Privacy Policy</a
+            >
         </li>
     </ul>
 </div>
@@ -63,7 +77,7 @@
         display: none;
     }
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 1000px) {
         .long {
             display: none;
         }
